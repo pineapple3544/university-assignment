@@ -42,6 +42,8 @@ pip install --upgrade torch transformers pillow
 
 ```
 your-repo/
+├─ models/
+│  └─ SmolVLM-500M-Instruct
 ├─ src/
 │  └─ image3.png        # 테스트용 이미지 (사용자 준비)
 ├─ run_smolvlm.py       # 실행 스크립트
