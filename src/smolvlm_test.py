@@ -21,7 +21,7 @@ messages = [
         "role": "user",
         "content": [
             {"type": "image"},
-            {"type": "text", "text": "Read the text in this image"},
+            {"type": "text", "text": "read only the completed text in image "},
         ],
     }
 ]
@@ -35,3 +35,4 @@ with torch.no_grad():
     output_ids = model.generate(**inputs, max_new_tokens=200)
 text = processor.batch_decode(output_ids, skip_special_tokens=True)[0]
 print(text)
+
